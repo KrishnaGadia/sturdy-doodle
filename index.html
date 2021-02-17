@@ -77,7 +77,7 @@ function myFunction() {
 
     $.ajax({
         type: "GET",
-        url: "http://localhost:8080/ProductList.csv",
+        url: "/ProductList.csv",
         success: function (data) {
             $('body').append(arrayToTable(Papa.parse(data).data));
         }
