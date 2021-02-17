@@ -15,7 +15,7 @@
   "dependencies": {
     "csv-parser": "^3.0.0",
     "jquery-csv": "^1.0.11"
-  }
+  },
   "engines": {
      "node": "15.3.0"
 }
