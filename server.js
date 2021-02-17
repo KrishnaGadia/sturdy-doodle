@@ -15,11 +15,12 @@ limitations under the License.
 */
 const express = require('express');
 const app = express();
+const PORT = process.env.PORT || 5000
 
 // This serves static files from the specified directory
 app.use(express.static(__dirname));
 
-const server = app.listen(8080, () => {
+const server = app.listen(PORT, () => {
 
   const host = server.address().address;
   const port = server.address().port;
