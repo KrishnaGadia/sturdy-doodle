@@ -182,7 +182,7 @@ function increment(id) {
 			row.append($('<th>'+cellData+'</th>'));
 		} else{
 			if(j==4){
-				row.append($('<td><input type="button" value="-" onClick="decrement('+i+')"><input type="number" value="0" id="'+i+'" style="width: 1em" onfocus="this.oldvalue = this.value;" onchange="onChangeQty(this);this.oldvalue = this.value;"/><input type="button" value="+"onClick="increment('+i+')"></td>'));
+				row.append($('<td><input type="button" value="-" onClick="decrement('+i+')"><input type="text" inputmode="numeric" value="0" id="'+i+'" style="width: 1em" onfocus="this.oldvalue = this.value;" onchange="onChangeQty(this);this.oldvalue = this.value;"/><input type="button" value="+"onClick="increment('+i+')"></td>'));
 			}
 			else if(j==3){
                 	row.append($('<td><b id="'+i+'-price">'+cellData+'</b></td>'));
