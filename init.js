@@ -116,7 +116,7 @@ function increment(id) {
 	var tprice = parseInt(document.getElementById("price").innerHTML, 10);
 	var itemprice = parseInt(document.getElementById(id + "-price").innerHTML, 10);
 	tprice = isNaN(tprice) ? 0 : tprice;
-	value = isNaN(value)  ? 0 : value;
+	value = isNaN(value) ? 0 : value;
 	item = isNaN(item) ? 0 : item;
 	if (value == 0)
 		item++;
@@ -135,13 +135,13 @@ function arrayToTable(tableData) {
 				row.append($('<th>' + cellData + '</th>'));
 			} else {
 				if (j == 4) {
-					row.append($('<td><input type="button" value="-" onClick="decrement(' + i + 
-						')"><input type="text" inputmode="numeric" value="0" id="' +  i+  
-					'" style="width: 1em" onfocus="this.oldvalue = this.value;" onchange="onChangeQty(this);this.oldvalue = this.value;"/>' +
+					row.append($('<td><input type="button" value="-" onClick="decrement(' + i +
+						')"><input type="text" inputmode="numeric" value="0" id="' + i +
+						'" style="width: 1em" onfocus="this.oldvalue = this.value;" onchange="onChangeQty(this);this.oldvalue = this.value;"/>' +
 						'<input type="button" value="+"onClick="increment(' + i + ')"></td>'));
 				}
 				else if (j == 3) {
-					row.append($('<td><b id="' + i + '-price">'  + cellData + '</b></td>'));
+					row.append($('<td><b id="' + i + '-price">' + cellData + '</b></td>'));
 				} else {
 					row.append($('<td>' + cellData + '</td>'));
 				}
@@ -152,11 +152,17 @@ function arrayToTable(tableData) {
 	return table;
 }
 function init() {
+	console.log("Called init");
 	$.ajax({
 		type: "GET",
-		url: "/ProductList.csv",
+		url: "ProductList.csv",
 		success: function(data) {
+			$('#Products').remove();
 			$('body').append(arrayToTable(Papa.parse(data).data));
+			document.getElementById("input").value = "";
+			document.getElementById("input").value = "";
+			document.getElementById("price").innerHTML = 0;
+			document.getElementById("items").innerHTML = 0;
 		}
 	});
 }
