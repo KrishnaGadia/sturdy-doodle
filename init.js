@@ -11,7 +11,7 @@ function myDownload() {
 
 		var row = tr[i].getElementsByTagName("td");
 		var name = row[0].innerHTML;
-		console.log(name);
+		//console.log(name);
 		var price = parseInt(row[3].innerText, 10);
 		var qty = parseInt(row[4].children[1].value, 10);
 
@@ -19,7 +19,7 @@ function myDownload() {
 			report.push(name + " Rs " + price + " * " + qty + " = Rs " + price * qty);
 			tp = tp + (price * qty);
 			item++;
-			console.log(name + " Rs " + price + " * " + qty + " " + tp);
+			//console.log(name + " Rs " + price + " * " + qty + " " + tp);
 		}
 	}
 	report.push("-------------------------------------------------");
@@ -29,7 +29,9 @@ function myDownload() {
 
 	console.log(report);
 
-	download(Date().toString() + ".txt", report);
+	var party = prompt("Enter Party name")
+	report.push("Party :" + party)
+	download(party + "-" + Date().toString() + ".txt", report);
 }
 function download(filename, rows) {
 	var element = document.createElement('a');
@@ -157,13 +159,26 @@ function init() {
 		type: "GET",
 		url: "ProductList.csv",
 		success: function(data) {
-			$('#Products').remove();
 			$('body').append(arrayToTable(Papa.parse(data).data));
-			document.getElementById("input").value = "";
-			document.getElementById("input").value = "";
-			document.getElementById("price").innerHTML = 0;
-			document.getElementById("items").innerHTML = 0;
 		}
 	});
 }
+
+function clearTable() {
+	document.getElementById("input").value = "";
+	document.getElementById("price").innerHTML = 0;
+	document.getElementById("items").innerHTML = 0;
+
+	var table = document.getElementById("Products");
+	var tr = table.getElementsByTagName("tr");
+
+	// Loop through all table rows, and set qty to 0
+	for (i = 1; i < tr.length - 1; i++) {
+
+		var row = tr[i].getElementsByTagName("td");
+		//console.log(row);
+		row[4].children[1].value = 0
+	}
+}
+
 init();

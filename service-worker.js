@@ -4,7 +4,8 @@ const precacheResources = [
   'index.html',
   'styles/main.css',
   'ProductList.csv',
-  'jquery.csv.js'
+  'jquery.csv.js',
+  'init.js'
 ];
 
 self.addEventListener('install', event => {
