@@ -45,6 +45,7 @@ function myDownload() {
 	var table = document.getElementById("Products");
 	  var tr = table.getElementsByTagName("tr");
 	    var tp = 0;
+	    var item=0;
 		var report = []
 	    report.push("** Bankey Bihari Toys **");
 	    report.push("-----------------------Items----------------------");
@@ -58,12 +59,13 @@ function myDownload() {
 		    if(qty>0){
 			    report.push(name+" Rs "+price+" * "+qty+" = Rs "+price*qty);
 				tp = tp + (price*qty);
+				item++;
 			    console.log(name+" Rs "+price+" * "+qty+" "+tp);
 			    }
 		    }
 		report.push("-------------------------------------------------");
 		
-		report.push("Items : "+report.length-3);
+		report.push("Items : "+item);
 		report.push("Amount Due : "+tp);
 	  
 	  console.log(report);
@@ -180,7 +182,7 @@ function increment(id) {
 			row.append($('<th>'+cellData+'</th>'));
 		} else{
 			if(j==4){
-				row.append($('<td><input type="button" value="+"onClick="increment('+i+')"><input type="number" value="0" id="'+i+'" onfocus="this.oldvalue = this.value;" onchange="onChangeQty(this);this.oldvalue = this.value;"/><input type="button" value="-" onClick="decrement('+i+')"></td>'));
+				row.append($('<td><input type="button" value="-" onClick="decrement('+i+')"><input type="number" value="0" id="'+i+'" onfocus="this.oldvalue = this.value;" onchange="onChangeQty(this);this.oldvalue = this.value;"/><input type="button" value="+"onClick="increment('+i+')"></td>'));
 			}
 			else if(j==3){
                 	row.append($('<td><b id="'+i+'-price">'+cellData+'</b></td>'));
