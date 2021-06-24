@@ -237,7 +237,7 @@ A1 BLOCKS,Blocks,PC,35,Impex
 33 PULL STRING CAR,Non RC Car,PC,81,Impex
 030 HUMMER CAR,Non RC Car,PC,56,Impex
 98 FRICTION CAR,Non RC Car,PC,135,Impex
-369-12 Non RC Car,Non RC Car,PC,54,Impex
+369-21 Non RC Car,Non RC Car,PC,54,Impex
 662 Non RC Car,Non RC Car,PC,59,Impex
 98 fr Non RC Car,Non RC Car,PC,135,Impex
 016 Non RC Car,Non RC Car,PC,97,Impex
@@ -251,4 +251,4 @@ RS-03 Rattle,Rattle,PC,45,Impex
 DC-04 RATTLE,Rattle,PC,81,Impex
 RC-04 RATTLE 4 PC SET,Rattle,PC,76,Impex
 TOY COMBO R/C CAR,RC Car,PC,225,Impex
-19004B TRAIN SET,Train,PC,29,Impex
+19004B TRAIN SET,Train,PC,32.5,Impex
