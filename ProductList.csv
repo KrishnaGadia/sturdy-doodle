@@ -81,12 +81,6 @@ karishma doll del,doll,dz,276,ND
 karishma purse del,doll,dz,336,ND
 karishma family del,doll,dz,336,ND
 silky saree del,doll,dz,906,ND
-thunder gun del,gun,dz,173,ND
-commander gun del,gun,dz,414,ND
-fire gun del,gun,dz,173,ND
-master gun del,gun,dz,132,ND
-2002 gun del,gun,dz,483,ND
-fau g gun del,gun,dz,483,ND
 poli dr set del,kitchen set,dz,240,ND
 11 no kitchen set del,kitchen set,dz,304,ND
 20-20 coffee set del,kitchen set,dz,304,ND
@@ -434,3 +428,8 @@ bell rattle del 1.09,rattle,dz,105,ND
 loco engine del 1.15,car,pc,185,ND
 viraj 805a big bubble,bubble,box,185,KT
 viraj 2102 small bubble,bubble,box,95,KT
+thunder gun del 1.12,gun,dz,180,ND
+commander gun del 1.12,gun,dz,414,ND
+master gun del 1.00,gun,dz,126,ND
+dhoom gun del 1.03,gun,dz,138,ND
+faug gun del 1.33,gun,dz,483,ND
