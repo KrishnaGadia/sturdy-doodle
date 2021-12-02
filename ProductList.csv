@@ -416,8 +416,8 @@ ipl set 3 pc rattle del 1.21,rattle,dz,279,ND
 bell rattle del 1.09,rattle,dz,105,ND
 106 no rattle del 1.09,rattle,dz,120,ND
 Jumbo loco engine del 1.15,car,pc,185,ND
-viraj 805a big bubble,bubble,box,185,KT
-viraj 2102 small bubble,bubble,box,95,KT
+viraj 805a big bubble,bubble,box,192,KT
+viraj 2102 small bubble,bubble,box,97,KT
 thunder gun del 1.12,gun,dz,180,ND
 commander gun del 1.12,gun,dz,414,ND
 master gun del 1.09,gun,dz,129,ND
