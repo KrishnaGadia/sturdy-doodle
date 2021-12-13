@@ -77,8 +77,8 @@ miss india del,doll,dz,180,ND
 basanti doll del,doll,dz,210,ND
 ma beti doll del,doll,dz,237,ND
 karishma doll del,doll,dz,276,ND
-karishma purse del,doll,dz,336,ND
-karishma family del,doll,dz,336,ND
+karishma purse del,doll,dz,348,ND
+karishma family del,doll,dz,348,ND
 silky saree del,doll,dz,906,ND
 11 no kitchen set del,kitchen set,dz,304,ND
 3 no. drum del,musical,dz,373,ND
@@ -93,7 +93,7 @@ dholak rattle del,rattle,dz,97,ND
 ipl rattle 3 pc del,rattle,dz,249,ND
 SARGAM,Musical,DZ,46,ND
 SURYA MED SAINIK GUN,Gun,DZ,79,ND
-Regal,Gun,DZ,81,ND
+Regal Todd Gun,Gun,DZ,83,ND
 225-6 SMALL ANIMAL,Animal 1.02,PC,46,Impex
 292D 7 PCS ANIMAL SET,Animal,PC,49,Impex
 335-6 ANIMAL SET,Animal,PC,49,Impex
@@ -453,3 +453,4 @@ FUNNY DR SET DEL 1.00,DR SET,dz,480,AT
 162 COFFEE SET DEL 1.24,K SET,dz,393,AT
 9950 KITCHEN SET DEL 1.24,K SET,dz,393,AT
 011 WHITE DEL 1.24,DR SET,dz,300,AT
+POLI DR SET DEL 1.00,DR SET,dz,240,AT
