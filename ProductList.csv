@@ -92,8 +92,8 @@ dholak rattle del,rattle,dz,97,ND
 5 pc set rt del,rattle,dz,483,ND
 ipl rattle 3 pc del,rattle,dz,249,ND
 SARGAM,Musical,DZ,46,ND
-SURYA MED SAINIK GUN,Gun,DZ,79,ND
 Regal Todd Gun,Gun,DZ,83,ND
+Regal Mini Todd Gun,Gun,DZ,78,ND
 225-6 SMALL ANIMAL,Animal 1.02,PC,46,Impex
 292D 7 PCS ANIMAL SET,Animal,PC,49,Impex
 335-6 ANIMAL SET,Animal,PC,49,Impex
@@ -419,6 +419,7 @@ bell rattle del 1.09,rattle,dz,105,ND
 Jumbo loco engine del 1.15,car,pc,185,ND
 viraj 805a big bubble,bubble,box,192,KT
 viraj 2102 small bubble,bubble,box,97,KT
+Delhi small mini bubble,bubble,box,90,KT
 thunder gun del 1.12,gun,dz,180,ND
 commander gun del 1.12,gun,dz,414,ND
 master gun del 1.09,gun,dz,129,ND
